@@ -1,20 +1,21 @@
 <head>
 	<meta charset="UTF-8">
+	{% assign afHeaderImage =  site.baseURL | append: site.afJekyll.headerImage %}
 	<title>{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}"/>
-	<meta name="keywords" content="dependency, injection, mobile, iOS, OSX, development, AppFoundry, belgie, belgië, belgium,  iPhone, iPad, applications, app, application, objective-c, swift, software, agile, IoC, inversion, control"/>
+	<meta name="keywords" content="{{ site.keywords }}"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="{{ site.title }}"/>
-	<meta property="og:url" content="http://reliant.appfoundry.be/"/>
+	<meta property="og:url" content="{{ site.baseURL }}"/>
 	<meta property="og:site_name" content="{{ site.title }}"/>
-	<meta property="og:image" content="http://reliant.appfoundry.be/images/reliant-heading.png"/>
+	<meta property="og:image" content="{{ afHeaderImage }}"/>
 	<meta property="og:description" content="{{ site.description }}"/>
-	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:card" content="{{ afHeaderImage }}"/>
 	<meta property="twitter:site" content="@AppFoundryBE"/>
 	<meta property="twitter:creator" content=" @AppFoundryBE "/>
 	<meta property="twitter:title" content="{{ site.title }}"/>
 	<meta property="twitter:description" content="{{ site.description }}"/>
-	<meta property="twitter:image" content="http://reliant.appfoundry.be/images/reliant-heading.png">
+	<meta property="twitter:image" content="{{ afHeaderImage }} ">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet" type="text/css">
 	<link href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}" rel="stylesheet" media="screen">
 	<script src="{{ "/assets/js/bundle.js?=" | append: site.github.build_revision | relative_url }}"></script>

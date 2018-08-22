@@ -5,27 +5,27 @@
       <h2>Contact</h2>
 
       <div>
-        <a href="https://github.com/appfoundry">
+        <a href="https://github.com/{{ site.afJekyll.github.link }}">
           <svg>
             <use xlink:href="#github"/>
           </svg>
-          <span>AppFoundry</span>
+          <span>{{ site.afJekyll.github.text }}</span>
         </a>
       </div>
       <div>
-        <a href="https://twitter.com/appfoundrybe">
+        <a href="https://twitter.com/{{ afJekyll.twitter.link }}">
           <svg>
             <use xlink:href="#twitter"/>
           </svg>
-          <span>@AppFoundryBE</span>
+          <span>{{ site.afJekyll.twitter.text }}</span>
         </a>
       </div>
       <div>
-        <a href="mailto:info@appfoundry.be">
+        <a href="mailto:{{ af.jekyll.mail }}">
           <svg>
               <use xlink:href="#mail"/>
           </svg>        
-          <span>info@appfoundry.be</span>
+          <span>{{ site.afJekyll.mail }}</span>
         </a>
       </div>
     </section>
@@ -33,7 +33,7 @@
     <section class="licence">
       <h2>Licence</h2>
 
-      <div>Reliant is released under <a href="http://opensource.org/licenses/MIT">MIT licence</a></div>
+      <div>{{ site.title }} is released under <a href="http://opensource.org/licenses/MIT">MIT licence</a></div>
 
     </section>
   </div>

@@ -1,8 +1,20 @@
-title: xxx
-description: xxx
+title: af-jekyl
+description: af-jekyl description
 
 lang: en-US
-branch: master
+
+baseURL: "https://example.com"
+
+afJekyll:
+  headerImage: "/images/header.png"
+  mail: "info@appfoundry.be"
+  github: 
+    link: "appfoundry"
+    text: "AppFoundry"
+  twitter: 
+    link: "appfoundrybe"
+    text: "@AppFoundryBE
+
 
 # Front matter defaults
 defaults:
