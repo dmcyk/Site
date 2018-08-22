@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = 'Site'
+  spec.name          = 'af-jekyll'
   spec.version       = '0.1.0'
   spec.authors       = ['Damian Malarczyk']
   spec.email         = ['damian.malarczyk@gmail.com']
