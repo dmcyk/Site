@@ -7,7 +7,6 @@ header {
   transition: all 0.75s ease;
 
   .logo-container {
-    @include span(3);
     height: 150px;
     display: flex;
 
@@ -17,8 +16,9 @@ header {
   }
 
   .brand {
-    @include span(6);
     margin-top: 1em;
+    display: flex;
+    flex-direction: column;
 
     .tagline {
       font-size: 1em;
@@ -62,10 +62,6 @@ header {
 
     h1 {
       font-size: 2em;
-    }
-
-    .logo-container {
-      @include span(1);
     }
   }
 
