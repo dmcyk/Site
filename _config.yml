@@ -4,5 +4,15 @@ description: xxx
 lang: en-US
 branch: master
 
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: index
+      comments: false
+
 exclude:
   - vendor/bundle
