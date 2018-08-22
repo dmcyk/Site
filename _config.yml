@@ -3,7 +3,7 @@ description: af-jekyl description
 
 lang: en-US
 
-baseURL: "https://example.com/"
+baseURL: "https://appfoundry.be/"
 
 github:
   organization: "AppFoundry"
@@ -19,7 +19,7 @@ logo:
     name: "Reliant"
     punchline: "dependency injection for iOS and OSX"
   svgFile:
-    path: "project_logo.svg"
+    path: "project_logo.svg" # relative in `_includes` folder
     id: "Reliant_Logo"
 
 style:
@@ -29,7 +29,7 @@ style:
 
 twitter: "AppFoundryBE"
 mail: "info@appfoundry.be"
-headerImage: "assets/images/header_image.png"
+headerImage: "header_image.png" # relative to `assets/images`
 
 # Front matter defaults
 defaults:
