@@ -1,8 +1,13 @@
 ---
 ---
 
-$c-theme: {{ site.afJekyll.themeColor }}
-$c-accent: {{ site.afJekyll.accentColor }}
-$c-text: {{ site.afJekyll.textColor }}
+{% if site.style %} 
+{% assign style=site.style %}
+
+$c-theme: {{ style.themeColor }}
+$c-accent: {{ style.accentColor }}
+$c-text: {{ style.textColor }}
+
+{% endif %}
 
 @import "site-theme"
