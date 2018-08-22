@@ -2,7 +2,7 @@
 
 set -ex
 
-sass_assets=( "bootstrap-sass" "font-awesome" )
+sass_assets=( "susy" )
 vendor_assets=( "font-awesome" )
 
 npm update
