@@ -4,30 +4,38 @@
     <section class="contact">
       <h2>Contact</h2>
 
+      {% if site.github %}
+      {% assign github=site.github %}
       <div>
-        <a href="https://github.com/{{ site.afJekyll.github.organization | downcase }}">
+        <a href="https://github.com/{{ github.organization | downcase }}">
           <svg>
             <use xlink:href="#github"/>
           </svg>
-          <span>{{ site.afJekyll.github.organization }}</span>
+          <span>{{ github.organization }}</span>
         </a>
       </div>
+      {% endif %}
+      {% if site.twitter %}
       <div>
-        <a href="https://twitter.com/{{ afJekyll.twitter | downcase }}">
+        <a href="https://twitter.com/{{ site.twitter | downcase }}">
           <svg>
             <use xlink:href="#twitter"/>
           </svg>
-          <span>@{{ site.afJekyll.twitter }}</span>
+          <span>@{{ site.twitter }}</span>
         </a>
       </div>
+      {% endif %}
+
+      {% if site.mail %}
       <div>
-        <a href="mailto:{{ af.jekyll.mail }}">
+        <a href="mailto:{{ site.mail }}">
           <svg>
               <use xlink:href="#mail"/>
           </svg>        
-          <span>{{ site.afJekyll.mail }}</span>
+          <span>{{ site.mail }}</span>
         </a>
       </div>
+      {% endif %}
     </section>
 
     <section class="licence">

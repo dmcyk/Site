@@ -3,7 +3,7 @@ description: af-jekyl description
 
 lang: en-US
 
-baseURL: "https://example.com"
+baseURL: "https://example.com/"
 
 github:
   organization: "AppFoundry"
@@ -27,9 +27,9 @@ style:
   accentColor: "#3366FF"
   textColor: "#FFFFFF"
 
-afJekyll:
-  mail: "info@appfoundry.be"
-  twitter: "AppFoundryBE"
+twitter: "AppFoundryBE"
+mail: "info@appfoundry.be"
+headerImage: "assets/images/header_image.png"
 
 # Front matter defaults
 defaults:
