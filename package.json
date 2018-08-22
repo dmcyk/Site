@@ -1,21 +1,21 @@
 {
-  "name": "retlab",
+  "name": "af-jelly",
   "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
+  "description": "xxx",
   "main": "script/server",
   "scripts": {
     "test": "script/cibuild"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benbalter/retlab.git"
+    "url": "git+https://github.com/dmcyk/af-jelly.git"
   },
-  "author": "Ben Balter",
+  "author": "AppFoundry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benbalter/retlab/issues"
+    "url": "https://github.com/dmcyk/af-jelly/issues"
   },
-  "homepage": "https://github.com/benbalter/retlab#readme",
+  "homepage": "https://github.com/dmcyk/af-jelly#readme",
   "dependencies": {
     "anchor-js": "^4.1.0",
     "bootstrap-sass": "^3.3.7",
