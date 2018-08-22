@@ -6,15 +6,6 @@ header {
 
   transition: all 0.75s ease;
 
-  .logo-container {
-    height: 150px;
-    display: flex;
-
-    > * {
-      height: 100%;
-    }
-  }
-
   .brand {
     margin-top: 1em;
     display: flex;
@@ -28,8 +19,8 @@ header {
   .logo {
     fill: white;
     color: $c-theme;
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    max-width: 200px;
   }
 
   .project-status {

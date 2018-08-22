@@ -5,15 +5,13 @@
 
   <div class="container vertical-box horizontal-inset">
     <div class="horizontal-box">
-      <div class="logo-container">
-        {% if logo.svgId %}
-        <svg class="logo">
-            <use xlink:href="#{{ logo.svgId }}"/>
-        </svg>
-        {% elsif logo.pngFile %}
-        <img src="/assets/images/{{ logo.pngFile }}" />
-        {% endif %}
-      </div>
+      {% if logo.svgId %}
+      <svg class="logo">
+          <use xlink:href="#{{ logo.svgId }}"/>
+      </svg>
+      {% elsif logo.pngFile %}
+      <img class="logo" src="/assets/images/{{ logo.pngFile }}" />
+      {% endif %}
       <div class="brand">
         {% assign brand=logo.brand %}
         <h1>{{ brand.name }}</h1>

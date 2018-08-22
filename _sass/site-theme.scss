@@ -45,9 +45,11 @@ body, #wrapper {
 #downloads {
   @include susy-clearfix;
   margin-top: 2vh;
+  display: flex;
+  justify-content: center;
 
-  > div {
-    @include span(4);
+  > * {
+    margin: 0 16px 0 16px;
   }
 }
 
