@@ -2,21 +2,7 @@ title: xxx
 description: xxx
 
 lang: en-US
-
-# Front matter defaults
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: index
-      comments: false
+branch: master
 
 exclude:
   - vendor/bundle
-  - node_modules
-  - script
-  - package.json
-  - package-lock.json
-  - af-jekyll.gemspec
-  - webpack.config.js

@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Damian Malarczyk']
   spec.email         = ['damian.malarczyk@gmail.com']
 
-  spec.summary       = 'A minimalist Jekyll theme for your personal site*'
+  spec.summary       = 'AppFoundry'
   spec.license       = 'MIT'
 
   regex      = %r{^(_layouts|_includes|_sass|LICENSE|README)/i}
