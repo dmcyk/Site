@@ -8,6 +8,12 @@ header {
 
   .logo-container {
     @include span(3);
+    height: 150px;
+    display: flex;
+
+    > * {
+      height: 100%;
+    }
   }
 
   .brand {
