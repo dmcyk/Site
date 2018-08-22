@@ -1,29 +1,41 @@
-<body>
-{% include svg.svg %}
-
 <header id="main-header">
-  <div class="container">
-    <div class="logo-container">
-      <svg class="logo">
-        <use xlink:href="#Reliant_Logo"/>
-      </svg>
-    </div>
-    <div class="brand">
-        <h1>Reliant</h1>
-        <p class="tagline">dependency injection for iOS and OSX</p>
-    </div>
-    <div class="project-status">
-      <a href="https://travis-ci.org/appfoundry/reliant">
-        <img src="https://img.shields.io/travis/appfoundry/Reliant/master.svg" alt="Reliant build status">
-      </a>
-      <a href="http://cocoadocs.org/docsets/Reliant/2.0.1/">
-        <img src="https://img.shields.io/cocoapods/v/Reliant.svg" alt="Cocoapods Version">
-      </a>
+  {% assign github=include.github %}
+  {% assign projectStatus=include.projectStatus %}
+  {% assign logo=include.logo %}
+
+  <div class="container vertical-box">
+    <div class="horizontal-box">
+      <div class="logo-container">
+        {% if logo.svgFile %}
+        {% assign svg=logo.svgFile %}
+
+        {% include {{ svg.path }} %}
+        <svg class="logo">
+            <use xlink:href="#{{ svg.id }}"/>
+        </svg>
+        {% elsif logo.pngFile %}
+        <img src="/assets/images/{{ logo.pngFile }}" />
+        {% endif %}
+      </div>
+      <div class="brand">
+        {% assign brand=logo.brand %}
+        <h1>{{ brand.name }}</h1>
+        <p class="tagline">{{ brand.punchline }}</p>
+      </div>
     </div>
 
-    <section id="downloads">
+    <div>
+        {% if projectStatus %}
+          {% include project_status.html status=projectStatus %}
+        {% endif %}
+    </div>
+
+    {% if github %} 
+    {% assign githubURL = 'https://github.com/' | append: github.organization | downcase | append: '/' | append: github.project | append: '/' %}
+    <div id="downloads">
+      {% if github.downloads %}
       <div>
-        <a href="https://github.com/appfoundry/Reliant/zipball/master" id="download-zip">
+        <a href="{{ githubURL }}zipball/master" id="download-zip">
           <svg>
             <use xlink:href="#zip_archive"/>
           </svg>
@@ -31,21 +43,23 @@
         </a>
       </div>
       <div>
-        <a href="https://github.com/appfoundry/Reliant/tarball/master" id="download-tar-gz">
+        <a href="{{ githubURL }}tarball/master" id="download-tar-gz">
           <svg>
             <use xlink:href="#tar_archive"/>
           </svg>
           <span>Download .tar.gz</span>
         </a>
       </div>
+      {% endif %}
       <div>
-        <a href="https://github.com/appfoundry/Reliant" id="view-on-github">
+        <a href="{{ githubURL }}" id="view-on-github">
           <svg>
             <use xlink:href="#github"/>
           </svg>
           <span>View on GitHub</span>
         </a>
       </div>
-    </section>
+    </div>
+    {% endif %} 
   </div>
 </header>

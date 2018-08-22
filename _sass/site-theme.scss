@@ -11,16 +11,33 @@
 @import "footer";
 @import "syntax";
 
+html, body {
+  height: 100%;
+}
+
+body, #wrapper {
+  min-height: 100%;
+}
+
+#wrapper {
+  display: flex; 
+  flex-direction: column;
+}
+
+#body {
+  flex: 1;
+}
+
 #intro {
-  background-color: $c-secondary-orange;
-  color: $c-white;
+  background-color: $c-accent;
+  color: $c-text;
   padding: 1vh 0 1vh 0;
   margin-bottom: 2vh;
 
   a {
-    color: $c-orange;
+    color: $c-theme;
     &:hover {
-      color: $c-white;
+      color: $c-text;
     }
   }
 }
@@ -37,7 +54,7 @@
 .content {
   section {
     padding-bottom: 2em;
-    border-bottom: 1px solid $c-orange;
+    border-bottom: 1px solid $c-theme;
 
     &:last-child {
       border-bottom: none;

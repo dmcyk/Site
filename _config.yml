@@ -5,16 +5,30 @@ lang: en-US
 
 baseURL: "https://example.com"
 
+github:
+  organization: "AppFoundry"
+  project: "Reliant"
+  downloads: true
+
+projectStatus:
+    podName: "Reliant"
+    supportsCarthage: true
+
+logo:
+  brand:
+    name: "Reliant"
+    punchline: "dependency injection for iOS and OSX"
+  svgFile:
+    path: "project_logo.svg"
+    id: "Reliant_Logo"
+
 afJekyll:
   headerImage: "/images/header.png"
   mail: "info@appfoundry.be"
-  github: 
-    link: "appfoundry"
-    text: "AppFoundry"
-  twitter: 
-    link: "appfoundrybe"
-    text: "@AppFoundryBE
-
+  twitter: "AppFoundryBE"
+  themeColor: "#336699"
+  accentColor: "#3366FF"
+  textColor: "#FFFFFF"
 
 # Front matter defaults
 defaults:

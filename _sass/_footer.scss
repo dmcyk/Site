@@ -1,6 +1,6 @@
 footer {
-  background-color: $c-secondary-orange;
-  border-top: 10px solid $c-orange;
+  background-color: $c-accent;
+  border-top: 10px solid $c-theme;
   padding-bottom: 3em;
   margin-top: 3em;
   section {
@@ -25,7 +25,7 @@ footer {
     color: white;
 
     &:hover {
-      color: $c-orange;
+      color: $c-theme;
     }
   }
 

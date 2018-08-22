@@ -1,17 +1,17 @@
 header {
   padding: 3em 0 1em 0;
-  background-color: $c-orange;
-  color: $c-white;
-  border-bottom: 10px solid $c-secondary-orange;
+  background-color: $c-theme;
+  color: $c-text;
+  border-bottom: 10px solid $c-accent;
 
   transition: all 0.75s ease;
 
   .logo-container {
-    @include span(3 first);
+    @include span(3);
   }
 
   .brand {
-    @include span(9);
+    @include span(6);
     margin-top: 1em;
 
     .tagline {
@@ -21,7 +21,7 @@ header {
 
   .logo {
     fill: white;
-    color: $c-orange;
+    color: $c-theme;
     height: 100%;
     width: 100%;
   }

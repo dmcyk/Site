@@ -5,19 +5,19 @@
       <h2>Contact</h2>
 
       <div>
-        <a href="https://github.com/{{ site.afJekyll.github.link }}">
+        <a href="https://github.com/{{ site.afJekyll.github.organization | downcase }}">
           <svg>
             <use xlink:href="#github"/>
           </svg>
-          <span>{{ site.afJekyll.github.text }}</span>
+          <span>{{ site.afJekyll.github.organization }}</span>
         </a>
       </div>
       <div>
-        <a href="https://twitter.com/{{ afJekyll.twitter.link }}">
+        <a href="https://twitter.com/{{ afJekyll.twitter | downcase }}">
           <svg>
             <use xlink:href="#twitter"/>
           </svg>
-          <span>{{ site.afJekyll.twitter.text }}</span>
+          <span>@{{ site.afJekyll.twitter }}</span>
         </a>
       </div>
       <div>
