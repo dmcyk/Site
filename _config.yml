@@ -18,10 +18,7 @@ logo:
   brand:
     name: "Reliant"
     punchline: "dependency injection for iOS and OSX"
-  pngFile: "direkt_logo.png"
-  # svgFile:
-  #   path: "project_logo.svg" # relative in `_includes` folder
-  #   id: "Reliant_Logo"
+  svgId: "Reliant_Logo"
 
 style:
   themeColor: "#336699"

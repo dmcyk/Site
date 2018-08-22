@@ -6,12 +6,9 @@
   <div class="container vertical-box">
     <div class="horizontal-box">
       <div class="logo-container">
-        {% if logo.svgFile %}
-        {% assign svg=logo.svgFile %}
-
-        {% include {{ svg.path }} %}
+        {% if logo.svgId %}
         <svg class="logo">
-            <use xlink:href="#{{ svg.id }}"/>
+            <use xlink:href="#{{ logo.svgId }}"/>
         </svg>
         {% elsif logo.pngFile %}
         <img src="/assets/images/{{ logo.pngFile }}" />
