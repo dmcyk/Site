@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: ['anchor-js', 'turbolinks', './_js/script.js'],
+  entry: ['anchor-js', 'turbolinks', './_js/bootstrap.js'],
   output: {
     filename: './assets/js/bundle.js'
   },
