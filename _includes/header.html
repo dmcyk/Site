@@ -7,7 +7,7 @@
 
   <div class="container vertical-box horizontal-inset">
     <div class="horizontal-box">
-      {% if logo.svgId %}
+      {% if logo.svgId and logo.svgId != empty %}
       <svg class="logo">
           <use xlink:href="#{{ logo.svgId }}"/>
       </svg>
