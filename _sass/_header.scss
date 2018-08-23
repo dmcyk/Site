@@ -31,6 +31,23 @@ header {
     }
   }
 
+  #downloads {
+    @include susy-clearfix;
+    margin-top: 2vh;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .downloads-item {
+    display:inline-block;
+    text-align:center;
+  }
+
+  .downloads-item:nth-child(2) {
+    flex-grow: 1;
+  }
+  
+
   &.collapsed {
     position: fixed;
     top: 0;

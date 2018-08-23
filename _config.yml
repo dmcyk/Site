@@ -9,7 +9,7 @@ logo:
   brand:
     name: "Reliant"
     punchline: "dependency injection for iOS and OSX"
-  svgId: ""
+  svgId: "Reliant_Logo"
   # OR - 
   # pngFile: "header_image.png"
 

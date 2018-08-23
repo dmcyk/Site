@@ -42,17 +42,6 @@ body, #wrapper {
   }
 }
 
-#downloads {
-  @include susy-clearfix;
-  margin-top: 2vh;
-  display: flex;
-  justify-content: center;
-
-  > * {
-    margin: 0 16px 0 16px;
-  }
-}
-
 .content {
   section {
     padding-bottom: 2em;

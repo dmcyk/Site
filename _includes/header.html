@@ -6,7 +6,7 @@
   {% assign defaults=site.data.defaults %}
 
   <div class="container vertical-box horizontal-inset">
-    <div class="horizontal-box">
+    <div class="horizontal-box justify-start">
       {% if logo.svgId and logo.svgId != empty %}
       <svg class="logo">
           <use xlink:href="#{{ logo.svgId }}"/>
@@ -31,7 +31,7 @@
     {% assign githubURL = 'https://github.com/' | append: github.organization | downcase | append: '/' | append: githubRepoName | append: '/' %}
     <div id="downloads">
       {% if github.downloads %}
-      <div>
+      <div class="downloads-item">
         <a href="{{ githubURL }}zipball/master" id="download-zip">
           <svg>
             <use xlink:href="#zip_archive"/>
@@ -39,7 +39,7 @@
           <span>Download .zip</span>
         </a>
       </div>
-      <div>
+      <div class="downloads-item">
         <a href="{{ githubURL }}tarball/master" id="download-tar-gz">
           <svg>
             <use xlink:href="#tar_archive"/>
@@ -48,7 +48,7 @@
         </a>
       </div>
       {% endif %}
-      <div>
+      <div class="downloads-item">
         <a href="{{ githubURL }}" id="view-on-github">
           <svg>
             <use xlink:href="#github"/>
