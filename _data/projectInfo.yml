@@ -2,7 +2,7 @@ name: "Reliant"
 
 licence:
   name: "MIT"
-  link: "http://opensource.org/licenses/MIT"
+  link: "https://opensource.org/licenses/MIT"
 
 status:
   podName: "Reliant"
