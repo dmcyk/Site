@@ -1,21 +1,19 @@
 {
-  "name": "af-jelly",
+  "name": "af-generic",
   "version": "1.0.0",
-  "description": "xxx",
+  "description": "This is the base theme used for all of AppFoundry's framework introduction pages",
   "main": "script/server",
-  "scripts": {
-    "test": "script/cibuild"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmcyk/af-jelly.git"
+    "url": "git+https://github.com/appfoundry/generic-framework-theme.git"
   },
   "author": "AppFoundry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dmcyk/af-jelly/issues"
+    "url": "https://github.com/appfoundry/generic-framework-theme/issues"
   },
-  "homepage": "https://github.com/dmcyk/af-jelly#readme",
+  "homepage": "https://github.com/appfoundry/generic-framework-theme#readme",
   "dependencies": {
     "anchor-js": "^4.1.0",
     "bootstrap-sass": "^3.3.7",
