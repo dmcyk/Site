@@ -1,12 +1,12 @@
 ---
 ---
 
-{% if site.style %} 
-{% assign style=site.style %}
+{% if site.data.style %} 
+{% assign style=site.data.style %}
 
-$c-theme: {{ style.themeColor }}
-$c-accent: {{ style.accentColor }}
-$c-text: {{ style.textColor }}
+$c-theme: {{ site.data.style.themeColor }}
+$c-accent: {{ site.data.style.accentColor }}
+$c-text: {{ site.data.style.textColor }}
 
 {% endif %}
 

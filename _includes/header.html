@@ -2,6 +2,7 @@
   {% assign github=include.github %}
   {% assign projectStatus=include.projectStatus %}
   {% assign logo=include.logo %}
+  {% assign defaults=site.data.defaults %}
 
   <div class="container vertical-box horizontal-inset">
     <div class="horizontal-box">
@@ -10,7 +11,7 @@
           <use xlink:href="#{{ logo.svgId }}"/>
       </svg>
       {% elsif logo.pngFile %}
-      <img class="logo" src="/assets/images/{{ logo.pngFile }}" />
+      <img class="logo" src="{{ defaults.imageAssets | append: logo.pngFile }}" />
       {% endif %}
       <div class="brand">
         {% assign brand=logo.brand %}

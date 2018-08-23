@@ -5,29 +5,15 @@ lang: en-US
 
 baseURL: "https://appfoundry.be/"
 
-github:
-  organization: "AppFoundry"
-  project: "Reliant"
-  downloads: true
-
-projectStatus:
-    podName: "Reliant"
-    supportsCarthage: true
-
 logo:
   brand:
     name: "Reliant"
     punchline: "dependency injection for iOS and OSX"
   svgId: "Reliant_Logo"
+  # OR - 
+  # pngFile: "header_image.png"
 
-style:
-  themeColor: "#336699"
-  accentColor: "#3366FF"
-  textColor: "#FFFFFF"
-
-twitter: "AppFoundryBE"
-mail: "info@appfoundry.be"
-headerImage: "header_image.png" # relative to `assets/images`
+headerImage: "header_image.png"
 
 # Front matter defaults
 defaults:

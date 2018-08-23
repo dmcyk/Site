@@ -1,11 +1,13 @@
 <footer>
   <div class="container horizontal-inset">
 
+    {% if site.data.social %}
+    {% assign social=site.data.social %}
     <section class="contact">
       <h2>Contact</h2>
 
-      {% if site.github %}
-      {% assign github=site.github %}
+      {% if social.github %}
+      {% assign github=social.github %}
       <div>
         <a href="https://github.com/{{ github.organization | downcase }}">
           <svg>
@@ -15,34 +17,38 @@
         </a>
       </div>
       {% endif %}
-      {% if site.twitter %}
+      {% if social.twitter %}
       <div>
-        <a href="https://twitter.com/{{ site.twitter | downcase }}">
+        <a href="https://twitter.com/{{ social.twitter | downcase }}">
           <svg>
             <use xlink:href="#twitter"/>
           </svg>
-          <span>@{{ site.twitter }}</span>
+          <span>@{{ social.twitter }}</span>
         </a>
       </div>
       {% endif %}
 
-      {% if site.mail %}
+      {% if social.mail %}
       <div>
-        <a href="mailto:{{ site.mail }}">
+        <a href="mailto:{{ social.mail }}">
           <svg>
               <use xlink:href="#mail"/>
           </svg>        
-          <span>{{ site.mail }}</span>
+          <span>{{ social.mail }}</span>
         </a>
       </div>
       {% endif %}
     </section>
+    {% endif %}
 
+    {% if site.data.projectInfo.licence %}
+    {% assign projectInfo=site.data.projectInfo %}
     <section class="licence">
       <h2>Licence</h2>
 
-      <div>{{ site.title }} is released under <a href="http://opensource.org/licenses/MIT">MIT licence</a></div>
+      <div>{{ projectInfo.name }} is released under <a href="{{ projectInfo.licence.link }}">{{ projectInfo.licence.name }} licence</a></div>
 
     </section>
+    {% endif %}
   </div>
 </footer>
