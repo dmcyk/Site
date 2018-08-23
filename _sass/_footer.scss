@@ -13,7 +13,7 @@ footer {
     }
 
     h2, p, div {
-      color: white;
+      color: $c-text;
     }
 
     div {
@@ -22,7 +22,7 @@ footer {
   }
 
   a {
-    color: white;
+    color: $c-text;
 
     &:hover {
       color: $c-theme;

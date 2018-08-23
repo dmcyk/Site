@@ -17,7 +17,7 @@ header {
   }
 
   .logo {
-    fill: white;
+    fill: $c-logoFill;
     color: $c-theme;
     height: 150px;
     max-width: 200px;
@@ -74,7 +74,7 @@ header {
   }
 
   a {
-    color: white;
+    color: $c-text;
   }
 
 }
