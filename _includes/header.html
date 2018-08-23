@@ -1,5 +1,6 @@
 <header id="main-header">
   {% assign github=include.github %}
+  {% assign githubRepoName=include.githubRepoName %}
   {% assign projectStatus=include.projectStatus %}
   {% assign logo=include.logo %}
   {% assign defaults=site.data.defaults %}
@@ -26,8 +27,8 @@
         {% endif %}
     </div>
 
-    {% if github %} 
-    {% assign githubURL = 'https://github.com/' | append: github.organization | downcase | append: '/' | append: github.project | append: '/' %}
+    {% if github && githubRepoName %} 
+    {% assign githubURL = 'https://github.com/' | append: github.organization | downcase | append: '/' | append: githubRepoName | append: '/' %}
     <div id="downloads">
       {% if github.downloads %}
       <div>

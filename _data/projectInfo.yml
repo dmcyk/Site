@@ -7,3 +7,5 @@ licence:
 status:
   podName: "Reliant"
   supportsCarthage: true
+
+githubRepoName: "Reliant"
