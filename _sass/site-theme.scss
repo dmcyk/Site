@@ -29,7 +29,7 @@ body, #body, html {
 }
 
 #body {
-  color: #253348;
+  color: $c-contentText;
 }
 
 #body {
@@ -59,4 +59,23 @@ body, #body, html {
       border-bottom: none;
     }
   }
+}
+
+#body {
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 2px solid $c-accent;
+        border-right: 2px solid $c-accent;
+    }
+
+    th:last-of-type, td:last-of-type {
+        border-right: none;
+    }
+
+    h2:after {
+        content: '';
+        display: block;
+        border: 1px solid $c-text;
+    }
 }
