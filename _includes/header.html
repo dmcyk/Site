@@ -11,7 +11,7 @@
       <svg class="logo">
           <use xlink:href="#{{ logo.svgId }}"/>
       </svg>
-      {% elsif logo.pngFile %}
+      {% elsif logo.pngFile and logo.pngFile != empty %}
       <img class="logo" src="{{ defaults.imageAssets | append: logo.pngFile }}" />
       {% endif %}
       <div class="brand">
